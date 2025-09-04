@@ -76,5 +76,6 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.sourcelink.json
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\r0hgljsl91-m5z2042v09.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-zsvlzne9i7.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-zsvlzne9i7.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-h8y0py3xgr.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-h8y0py3xgr.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vh6gq9qf5k-qhcn0za3qv.gz

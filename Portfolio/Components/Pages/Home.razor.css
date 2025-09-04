@@ -1,13 +1,35 @@
+.introduction {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.intro-text {
+    display: block;
+    text-align: justify;
+    color: black;
+    max-width: 350px;
+    margin-left: 1rem;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-family: "rainyhearts", 'VCR OSD Mono', monospace;
+    font-weight: 500;
+}
+
 .description {
     display: block;
     text-align: center;
     margin-top: 5vh;
     font-size: 20px;
     color: black;
-}
-
-.profile-picture {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
