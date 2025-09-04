@@ -1,5 +1,15 @@
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('/Fonts/vcrosdmono.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'rainyhearts';
+    src: url('/Fonts/rainyhearts.ttf') format('truetype');
+}
+
 html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'VCR OSD Mono', 'rainyhearts';
 }
 
 a, .btn-link {

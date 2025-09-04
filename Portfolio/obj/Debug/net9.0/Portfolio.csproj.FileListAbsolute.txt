@@ -20,7 +20,6 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Layout\Mai
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\bundle\Portfolio.styles.css
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\projectbundle\Portfolio.bundle.scp.css
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\r0hgljsl91-khy4lop6wu.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\z9ox1p0g2z-bqjiyaj88i.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\7kugpp8rjx-c2jlpeoesf.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\qagkczq6cx-erw9l3u2r3.gz
@@ -65,8 +64,6 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\yf5jrlpem0-notf2xhcf
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\1p4e9hy8wt-h1s4sie4z3.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\hu67gzmg1y-63fj8s7r0e.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\phhm22dp1m-0j3bgjxly4.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-9gy4fd1z4j.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-9gy4fd1z4j.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\staticwebassets.build.json
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\staticwebassets.build.json.cache
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\staticwebassets.development.json
@@ -77,3 +74,7 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.pdb
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.genruntimeconfig.cache
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.sourcelink.json
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\r0hgljsl91-m5z2042v09.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-zsvlzne9i7.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-zsvlzne9i7.gz

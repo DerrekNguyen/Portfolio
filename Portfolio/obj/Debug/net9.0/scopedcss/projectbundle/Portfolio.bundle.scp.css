@@ -203,3 +203,17 @@ main[b-6s3h03cu1w] {
         overflow-y: auto;
     }
 }
+/* _content/Portfolio/Components/Pages/Home.razor.rz.scp.css */
+.description[b-msgvu9ph55] {
+    display: block;
+    text-align: center;
+    margin-top: 2vh;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-picture[b-msgvu9ph55] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

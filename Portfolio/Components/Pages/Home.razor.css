@@ -1,0 +1,13 @@
+.description {
+    display: block;
+    text-align: center;
+    margin-top: 5vh;
+    font-size: 20px;
+    color: black;
+}
+
+.profile-picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

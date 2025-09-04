@@ -32,10 +32,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Stuff/C\#/Portfolio/Portfolio/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Stuff/C\#/Portfolio/Portfolio/Components/Pages/Projects.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9qZWN0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -55,3 +51,7 @@ build_metadata.AdditionalFiles.CssScope = b-6s3h03cu1w
 [D:/Stuff/C\#/Portfolio/Portfolio/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-fw0lmtliz2
+
+[D:/Stuff/C\#/Portfolio/Portfolio/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-msgvu9ph55
