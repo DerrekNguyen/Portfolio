@@ -13,6 +13,43 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -774365147,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Layout.NavMenu",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Layout.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "Portfolio.Components.Layout",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 770470534,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Layout.NavMenu",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Portfolio.Components.Layout.NavMenu"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Layout.NavMenu",
+          "Common.TypeNameIdentifier": "NavMenu",
+          "Common.TypeNamespace": "Portfolio.Components.Layout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
         "HashCode": -2086486004,
         "Kind": "Components.Component",
         "Name": "Portfolio.Components.Layout.MainLayout",
@@ -119,38 +156,112 @@
         }
       },
       {
-        "HashCode": -774365147,
+        "HashCode": -436344354,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Layout.NavMenu",
+        "Name": "Portfolio.Components.Routes",
         "AssemblyName": "Portfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "NavMenu"
+            "TagName": "Routes"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Layout.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Portfolio.Components.Layout",
+          "Common.TypeName": "Portfolio.Components.Routes",
+          "Common.TypeNameIdentifier": "Routes",
+          "Common.TypeNamespace": "Portfolio.Components",
           "Runtime.Name": "Components.IComponent"
         }
       },
       {
-        "HashCode": 770470534,
+        "HashCode": 1580380133,
         "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Layout.NavMenu",
+        "Name": "Portfolio.Components.Routes",
         "AssemblyName": "Portfolio",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Portfolio.Components.Layout.NavMenu"
+            "TagName": "Portfolio.Components.Routes"
           }
         ],
         "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Layout.NavMenu",
-          "Common.TypeNameIdentifier": "NavMenu",
-          "Common.TypeNamespace": "Portfolio.Components.Layout",
+          "Common.TypeName": "Portfolio.Components.Routes",
+          "Common.TypeNameIdentifier": "Routes",
+          "Common.TypeNamespace": "Portfolio.Components",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 120349988,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Pages.Projects",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Projects"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Pages.Projects",
+          "Common.TypeNameIdentifier": "Projects",
+          "Common.TypeNamespace": "Portfolio.Components.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -36698042,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Pages.Projects",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Portfolio.Components.Pages.Projects"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Pages.Projects",
+          "Common.TypeNameIdentifier": "Projects",
+          "Common.TypeNamespace": "Portfolio.Components.Pages",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": 1149326256,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Pages.Contacts",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Contacts"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Pages.Contacts",
+          "Common.TypeNameIdentifier": "Contacts",
+          "Common.TypeNamespace": "Portfolio.Components.Pages",
+          "Runtime.Name": "Components.IComponent"
+        }
+      },
+      {
+        "HashCode": -146484198,
+        "Kind": "Components.Component",
+        "Name": "Portfolio.Components.Pages.Contacts",
+        "AssemblyName": "Portfolio",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Portfolio.Components.Pages.Contacts"
+          }
+        ],
+        "Metadata": {
+          "Common.TypeName": "Portfolio.Components.Pages.Contacts",
+          "Common.TypeNameIdentifier": "Contacts",
+          "Common.TypeNamespace": "Portfolio.Components.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
         }
@@ -187,80 +298,6 @@
         "Metadata": {
           "Common.TypeName": "Portfolio.Components.Pages.Error",
           "Common.TypeNameIdentifier": "Error",
-          "Common.TypeNamespace": "Portfolio.Components.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -1921699875,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Pages.Counter",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Pages.Counter",
-          "Common.TypeNameIdentifier": "Counter",
-          "Common.TypeNamespace": "Portfolio.Components.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 208284317,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Pages.Counter",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Portfolio.Components.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Pages.Counter",
-          "Common.TypeNameIdentifier": "Counter",
-          "Common.TypeNamespace": "Portfolio.Components.Pages",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 436132606,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Pages.Weather",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Weather"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Pages.Weather",
-          "Common.TypeNameIdentifier": "Weather",
-          "Common.TypeNamespace": "Portfolio.Components.Pages",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 602436944,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Pages.Weather",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Portfolio.Components.Pages.Weather"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Pages.Weather",
-          "Common.TypeNameIdentifier": "Weather",
           "Common.TypeNamespace": "Portfolio.Components.Pages",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -335,43 +372,6 @@
         "Metadata": {
           "Common.TypeName": "Portfolio.Components.App",
           "Common.TypeNameIdentifier": "App",
-          "Common.TypeNamespace": "Portfolio.Components",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": -436344354,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Routes",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Routes"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Routes",
-          "Common.TypeNameIdentifier": "Routes",
-          "Common.TypeNamespace": "Portfolio.Components",
-          "Runtime.Name": "Components.IComponent"
-        }
-      },
-      {
-        "HashCode": 1580380133,
-        "Kind": "Components.Component",
-        "Name": "Portfolio.Components.Routes",
-        "AssemblyName": "Portfolio",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Portfolio.Components.Routes"
-          }
-        ],
-        "Metadata": {
-          "Common.TypeName": "Portfolio.Components.Routes",
-          "Common.TypeNameIdentifier": "Routes",
           "Common.TypeNamespace": "Portfolio.Components",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch",
           "Runtime.Name": "Components.IComponent"
@@ -19836,6 +19836,11 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Pages\\Projects.razor",
+      "TargetPath": "Components\\Pages\\Projects.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Routes.razor",
       "TargetPath": "Components\\Routes.razor",
       "FileKind": "component"
@@ -19846,8 +19851,8 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Pages\\Counter.razor",
-      "TargetPath": "Components\\Pages\\Counter.razor",
+      "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Pages\\Contacts.razor",
+      "TargetPath": "Components\\Pages\\Contacts.razor",
       "FileKind": "component"
     },
     {
@@ -19863,11 +19868,6 @@
     {
       "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Layout\\MainLayout.razor",
       "TargetPath": "Components\\Layout\\MainLayout.razor",
-      "FileKind": "component"
-    },
-    {
-      "FilePath": "d:\\Stuff\\C#\\Portfolio\\Portfolio\\Components\\Pages\\Weather.razor",
-      "TargetPath": "Components\\Pages\\Weather.razor",
       "FileKind": "component"
     },
     {

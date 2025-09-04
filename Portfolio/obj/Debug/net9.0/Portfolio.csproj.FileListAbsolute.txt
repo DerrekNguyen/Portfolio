@@ -76,3 +76,4 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\refint\Portfolio.dll
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.pdb
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.genruntimeconfig.cache
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\ref\Portfolio.dll
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\Portfolio.sourcelink.json
