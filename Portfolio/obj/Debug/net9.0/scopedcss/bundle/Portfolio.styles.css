@@ -72,7 +72,7 @@ main[b-6s3h03cu1w] {
     }
 
     .top-row[b-6s3h03cu1w], article[b-6s3h03cu1w] {
-        padding-left: 2rem !important;
+        padding-left: 1.5rem !important;
         padding-right: 1.5rem !important;
     }
 }
@@ -206,14 +206,14 @@ main[b-6s3h03cu1w] {
 /* _content/Portfolio/Components/Pages/Home.razor.rz.scp.css */
 .background-video[b-msgvu9ph55] {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
 .video[b-msgvu9ph55] {
     position: absolute;
     top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 90vh;
     object-fit: cover;
     z-index: 0;
 }

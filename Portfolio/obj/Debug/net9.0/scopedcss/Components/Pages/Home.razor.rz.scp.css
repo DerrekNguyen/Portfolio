@@ -1,13 +1,13 @@
 .background-video[b-msgvu9ph55] {
     position: relative;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
 .video[b-msgvu9ph55] {
     position: absolute;
     top: 0; left: 0;
-    width: 100vw; height: 100vh;
+    width: 100vw; height: 90vh;
     object-fit: cover;
     z-index: 0;
 }
