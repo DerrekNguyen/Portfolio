@@ -230,7 +230,7 @@ main[b-6s3h03cu1w] {
 .intro-text[b-msgvu9ph55] {
     display: block;
     text-align: justify;
-    color: black;
+    color: rgb(156, 152, 241);
     max-width: 350px;
     margin-left: 1rem;
 }
@@ -244,9 +244,9 @@ main[b-6s3h03cu1w] {
 .description[b-msgvu9ph55] {
     display: block;
     text-align: center;
-    margin-top: 5vh;
+    margin-top: 10vh;
     font-size: 20px;
-    color: black;
+    color: rgb(156, 152, 241);
 }
 /* _content/Portfolio/Components/Pages/Projects.razor.rz.scp.css */
 .background-video[b-gtg71hy2sf] {

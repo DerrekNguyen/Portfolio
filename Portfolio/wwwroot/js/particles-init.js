@@ -1,9 +1,13 @@
-async function initParticles() {
-    await tsParticles.load("tsparticles", {
+console.log("particles-init.js loaded");
+
+window.initParticles = async function() {
+    console.log("initParticles executed!");
+
+    tsParticles.load("tsparticles", {
         "autoPlay": true,
         "background": {
             "color": {
-                "value": "#0d47a1"
+                "value": "#000000ff"
             },
             "image": "",
             "position": "",
@@ -35,21 +39,21 @@ async function initParticles() {
             "detectsOn": "window",
             "events": {
                 "onClick": {
-                    "enable": true,
-                    "mode": "push"
+                    "enable": false,
+                    "mode": []
                 },
                 "onDiv": {
-                    "selectors": {},
+                    "selectors": [],
                     "enable": false,
-                    "mode": {},
+                    "mode": [],
                     "type": "circle"
                 },
                 "onHover": {
-                    "enable": true,
-                    "mode": "grab",
+                    "enable": false,
+                    "mode": [],
                     "parallax": {
-                        "enable": true,
-                        "force": 60,
+                        "enable": false,
+                        "force": 2,
                         "smooth": 10
                     }
                 },
@@ -76,17 +80,9 @@ async function initParticles() {
                     "distance": 200
                 },
                 "bubble": {
-                    "distance": 400,
-                    "duration": 2,
-                    "mix": false,
-                    "opacity": 0.8,
-                    "size": 40,
-                    "divs": {
-                        "distance": 200,
-                        "duration": 0.4,
-                        "mix": false,
-                        "selectors": {}
-                    }
+                    "distance": 200,
+                    "duration": 0.4,
+                    "mix": false
                 },
                 "connect": {
                     "distance": 80,
@@ -96,7 +92,7 @@ async function initParticles() {
                     "radius": 60
                 },
                 "grab": {
-                    "distance": 400,
+                    "distance": 100,
                     "links": {
                         "blink": false,
                         "consent": false,
@@ -115,18 +111,9 @@ async function initParticles() {
                     "distance": 200,
                     "duration": 0.4,
                     "factor": 100,
-                    "speed": 1,
+                    "speed": 0.3,
                     "maxSpeed": 50,
-                    "easing": "ease-out-quad",
-                    "divs": {
-                        "distance": 200,
-                        "duration": 0.4,
-                        "factor": 100,
-                        "speed": 1,
-                        "maxSpeed": 50,
-                        "easing": "ease-out-quad",
-                        "selectors": {}
-                    }
+                    "easing": "ease-out-quad"
                 },
                 "slow": {
                     "factor": 3,
@@ -189,12 +176,12 @@ async function initParticles() {
                 }
             },
             "color": {
-                "value": "#ffffff",
+                "value": "#fff",
                 "animation": {
                     "h": {
                         "count": 0,
                         "enable": false,
-                        "speed": 1,
+                        "speed": 20,
                         "decay": 0,
                         "delay": 0,
                         "sync": true,
@@ -224,13 +211,13 @@ async function initParticles() {
                 "close": true,
                 "fill": true,
                 "options": {},
-                "type": {}
+                "type": []
             },
             "groups": {},
             "move": {
                 "angle": {
                     "offset": 0,
-                    "value": 90
+                    "value": 10
                 },
                 "attract": {
                     "distance": 200,
@@ -248,7 +235,7 @@ async function initParticles() {
                 },
                 "decay": 0,
                 "distance": {},
-                "direction": "none",
+                "direction": "right",
                 "drift": 0,
                 "enable": true,
                 "gravity": {
@@ -274,7 +261,7 @@ async function initParticles() {
                 },
                 "random": false,
                 "size": false,
-                "speed": 2,
+                "speed": 5,
                 "spin": {
                     "acceleration": 0,
                     "enable": false
@@ -290,7 +277,7 @@ async function initParticles() {
             },
             "number": {
                 "density": {
-                    "enable": true,
+                    "enable": false,
                     "width": 1920,
                     "height": 1080
                 },
@@ -298,17 +285,14 @@ async function initParticles() {
                     "mode": "delete",
                     "value": 0
                 },
-                "value": 100
+                "value": 30
             },
             "opacity": {
-                "value": {
-                    "min": 0.1,
-                    "max": 0.5
-                },
+                "value": 1,
                 "animation": {
                     "count": 0,
-                    "enable": true,
-                    "speed": 3,
+                    "enable": false,
+                    "speed": 2,
                     "decay": 0,
                     "delay": 0,
                     "sync": false,
@@ -336,14 +320,11 @@ async function initParticles() {
                 "type": "circle"
             },
             "size": {
-                "value": {
-                    "min": 1,
-                    "max": 10
-                },
+                "value": 3,
                 "animation": {
                     "count": 0,
-                    "enable": true,
-                    "speed": 20,
+                    "enable": false,
+                    "speed": 5,
                     "decay": 0,
                     "delay": 0,
                     "sync": false,
@@ -356,8 +337,8 @@ async function initParticles() {
                 "width": 0
             },
             "zIndex": {
-                "value": 0,
-                "opacityRate": 1,
+                "value": 5,
+                "opacityRate": 0.5,
                 "sizeRate": 1,
                 "velocityRate": 1
             },
@@ -464,13 +445,13 @@ async function initParticles() {
             "links": {
                 "blink": false,
                 "color": {
-                    "value": "#ffffff"
+                    "value": "#fff"
                 },
                 "consent": false,
-                "distance": 150,
-                "enable": true,
+                "distance": 100,
+                "enable": false,
                 "frequency": 1,
-                "opacity": 0.4,
+                "opacity": 1,
                 "shadow": {
                     "blur": 5,
                     "color": {
@@ -501,8 +482,74 @@ async function initParticles() {
         "style": {},
         "themes": [],
         "zLayers": 100,
-        "key": "parallax",
-        "name": "Parallax",
+        "key": "amongUs",
+        "name": "Among Us",
+        "emitters": {
+            "autoPlay": true,
+            "fill": true,
+            "life": {
+                "wait": false
+            },
+            "rate": {
+                "quantity": 1,
+                "delay": 7
+            },
+            "shape": {
+                "options": {},
+                "replace": {
+                    "color": false,
+                    "opacity": false
+                },
+                "type": "square"
+            },
+            "startCount": 0,
+            "size": {
+                "mode": "percent",
+                "height": 0,
+                "width": 0
+            },
+            "particles": {
+                "shape": {
+                    "type": "images",
+                    "options": {
+                        "images": {
+                            "src": "https://particles.js.org/images/cyan_amongus.png",
+                            "width": 500,
+                            "height": 634
+                        }
+                    }
+                },
+                "size": {
+                    "value": 20
+                },
+                "move": {
+                    "speed": 7,
+                    "outModes": {
+                        "default": "none",
+                        "right": "destroy"
+                    },
+                    "straight": true
+                },
+                "zIndex": {
+                    "value": 0
+                },
+                "rotate": {
+                    "value": {
+                        "min": 0,
+                        "max": 360
+                    },
+                    "animation": {
+                        "enable": true,
+                        "speed": 10,
+                        "sync": true
+                    }
+                }
+            },
+            "position": {
+                "x": -5,
+                "y": 85
+            }
+        },
         "motion": {
             "disable": false,
             "reduce": {
@@ -512,3 +559,25 @@ async function initParticles() {
         }
     });
 }
+
+initParticles();
+
+// window.initParticles = function() {
+//     console.log("initParticles executed!");
+
+//     // minimal tsParticles config
+//     tsParticles.load("tsparticles", {
+//         background: { color: { value: "transparent" } },
+//         particles: {
+//             number: { value: 50, density: { enable: true, area: 800 } },
+//             color: { value: "#ff0000" },
+//             links: { enable: true, distance: 150, color: "#ff0000", opacity: 0.5, width: 1 },
+//             move: { enable: true, speed: 2 },
+//             size: { value: 4 }
+//         },
+//         interactivity: {
+//             events: { onHover: { enable: true, mode: "repulse" }, resize: true },
+//             modes: { repulse: { distance: 100 } }
+//         }
+//     });
+// };

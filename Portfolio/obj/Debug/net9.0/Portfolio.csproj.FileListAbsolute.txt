@@ -78,7 +78,6 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\r0hgljsl91-m5z2042v0
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vh6gq9qf5k-qhcn0za3qv.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Pages\Projects.razor.rz.scp.css
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-j29id6wujo.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-j29id6wujo.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\hnm3u4d5gb-r7y275vs84.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\1ie2bik5uw-bbag5h6pri.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-z3cd506a77.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-z3cd506a77.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\x3tn7qiu2g-m4zj74x2jp.gz
