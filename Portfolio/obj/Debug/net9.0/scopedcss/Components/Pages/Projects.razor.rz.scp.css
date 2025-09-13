@@ -1,0 +1,18 @@
+.background-video[b-gtg71hy2sf] {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.video[b-gtg71hy2sf] {
+    position: absolute;
+
+    /* center video */
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%; height: 100%;
+    object-fit: contain;
+    background-color: black;
+    z-index: 0;
+}

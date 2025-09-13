@@ -1,11 +1,9 @@
 ﻿@page "/"
+@inject IJSRuntime JS
 
 <PageTitle>Home</PageTitle>
 
-<!-- Background video to greet. Placeholder image for now. -->
-<div class="background-video">
-    <img src="Images/Media.jpg" class="video"/>
-</div>
+<div id="tsparticles" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:-1;"></div>
 
 <div class="main-content">
     <div class="introduction">
@@ -22,3 +20,14 @@
         <h1> Here, you can find projects that I worked on / am working on. </h1>
     </div>
 </div>
+
+
+@code {
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("initParticles");
+        }
+    }
+}

@@ -1,15 +1,11 @@
-.background-video {
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-}
-
-.video {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100vw; height: 90vh;
-    object-fit: cover;
-    z-index: 0;
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 2rem;
+    z-index: 1;
 }
 
 .introduction {
