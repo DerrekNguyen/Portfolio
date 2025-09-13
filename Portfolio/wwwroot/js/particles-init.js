@@ -561,23 +561,3 @@ window.initParticles = async function() {
 }
 
 initParticles();
-
-// window.initParticles = function() {
-//     console.log("initParticles executed!");
-
-//     // minimal tsParticles config
-//     tsParticles.load("tsparticles", {
-//         background: { color: { value: "transparent" } },
-//         particles: {
-//             number: { value: 50, density: { enable: true, area: 800 } },
-//             color: { value: "#ff0000" },
-//             links: { enable: true, distance: 150, color: "#ff0000", opacity: 0.5, width: 1 },
-//             move: { enable: true, speed: 2 },
-//             size: { value: 4 }
-//         },
-//         interactivity: {
-//             events: { onHover: { enable: true, mode: "repulse" }, resize: true },
-//             modes: { repulse: { distance: 100 } }
-//         }
-//     });
-// };

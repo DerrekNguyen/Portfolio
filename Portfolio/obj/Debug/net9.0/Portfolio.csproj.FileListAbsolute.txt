@@ -80,4 +80,4 @@ D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\vh6gq9qf5k-qhcn0za3q
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\scopedcss\Components\Pages\Projects.razor.rz.scp.css
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\fctagi56cc-z3cd506a77.gz
 D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\3vkrp9z1r6-z3cd506a77.gz
-D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\x3tn7qiu2g-m4zj74x2jp.gz
+D:\Stuff\C#\Portfolio\Portfolio\obj\Debug\net9.0\compressed\x3tn7qiu2g-7c2sbgxqtn.gz
