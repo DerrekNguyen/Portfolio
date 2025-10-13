@@ -1,11 +1,12 @@
-import { useState } from 'react'
-import face from './assets/face.jpg'
+import face from './assets/face.png'
+import ParticleComponent from './components/Particles.js'
 import './App.css'
 
 function App() {
   return (
     <>
-      <div>
+      <ParticleComponent />
+      <div style={{ position: "relative", zIndex: 1 }}>
         <img src={face}></img>
       </div>
     </>
