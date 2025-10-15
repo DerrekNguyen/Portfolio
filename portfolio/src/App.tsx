@@ -1,24 +1,18 @@
-import face from './assets/face.png'
-import ParticleComponent from './components/Particles.js'
+import Home from './pages/Home'
+import NavBar from './pages/NavBar';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import './App.css'
-import './styles/landingpage.css'
 
 function App() {
   return (
-    <>
-      <ParticleComponent />
-      <div className='introContainer'>
-        <div className='faceImg'>
-          <img src={face}></img>
-        </div>
-        <div className='introTextContainer'>
-          <p>
-            Welcome to my Portfolio. You can find my projects & contacts here.
-          </p>
-        </div>
-      </div>
-    </>
-  )
+    <Router>
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Navigate to="/home"/>} />
+        <Route path="home" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App

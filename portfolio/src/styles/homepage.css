@@ -17,7 +17,9 @@
 
 .faceImg img {
     width: 25vw;
-    height: 50vh;
+    height: auto;
+    max-width: 100%;
+    display: block;
 }
 
 .introTextContainer {
@@ -25,8 +27,8 @@
 }
 
 .introTextContainer p {
-    color: #87e4f7ff;
+    color: #87e4f7;
     font-family: "Montserrat";
-    font-size: xx-large;
+    font-size: clamp(1rem, 5vw, 3rem);;
     font-weight: bolder;
 }
