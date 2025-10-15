@@ -9,7 +9,7 @@ const ParticleComponent: React.FC = () => {
             particles: {
                 number: { value: 80 },
                 color: { value: "#ffffffff"},
-                move: { enable: true, speed: {min: 1, max: 3} },
+                move: { enable: true, speed: {min: 1, max: 2} },
                 size: { value: 1 },
                 links: { enable: true, size: 1, color:"#87e4f7ff" },
             },

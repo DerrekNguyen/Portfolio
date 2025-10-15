@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+.introContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faceImg {
+    position: relative;
+    z-index: 1;
+    margin-right: -4vw;
+}
+
+.faceImg img {
+    width: 25vw;
+    height: 50vh;
+}
+
+.introTextContainer {
+    width: 30vw;
+}
+
+.introTextContainer p {
+    color: #87e4f7ff;
+    font-family: "Montserrat";
+    font-size: xx-large;
+    font-weight: bolder;
+}
