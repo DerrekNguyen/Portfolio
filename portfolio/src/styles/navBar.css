@@ -36,7 +36,7 @@
     border: none;
 }
 
-.navItem:hover button {
+.navItem:hover  {
     background: #2e2e2e;
 }
 
@@ -44,13 +44,15 @@
     height: 100%;
     max-height: 10vh;
     width: auto;
-    transition: opacity 0.3s ease;
+    transform: translateY(1vh);
+    transition: transform 0.3s ease;
 }
 
 .navItem:hover img {
     height: 100%;
     max-height: 10vh;
     width: auto;
+    transform: translateY(0vh);
 }
 
 .navItem p {
@@ -62,7 +64,7 @@
     color: white;
     transition: opacity 0.3s ease, transform 0.3s ease;
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(1vh);
 }
 
 .navItem:hover p {
