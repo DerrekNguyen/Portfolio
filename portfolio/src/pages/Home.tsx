@@ -1,11 +1,9 @@
 import face from '../assets/images/face.png'
-import ParticleComponent from '../components/Particles.js'
 import '../styles/homepage.css'
 
 function Home() {
   return (
     <>
-      <ParticleComponent />
       <div className='introContainer'>
         <div className='faceImg'>
           <img src={face}></img>

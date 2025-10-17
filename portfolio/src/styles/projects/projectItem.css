@@ -1,0 +1,10 @@
+.projectItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    width: 20vw;
+    border: 0.5vh solid #80ec97;
+    font-family: 'Montserrat';
+}
