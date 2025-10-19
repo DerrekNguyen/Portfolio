@@ -3,8 +3,11 @@
     align-items: center;
     justify-content: center;
 
-    height: auto;
-    width: 20vw;
+    height: 30vh;
+    width: 15vw;
     border: 0.5vh solid #80ec97;
     font-family: 'Montserrat';
+    border-radius: 30%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }

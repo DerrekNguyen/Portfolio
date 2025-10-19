@@ -5,7 +5,7 @@ import ContactDefault from '../../assets/icons/ContactDefault.svg'
 import ContactHover from '../../assets/icons/ContactHover.svg'
 import HomeDefault from '../../assets/icons/HomeDefault.svg'
 import HomeHover from '../../assets/icons/HomeHover.svg'
-import NavBarItem from './NavBarButton'
+import NavBarItem from './NavBarItem.tsx'
 
 function NavBar() {
   return (
