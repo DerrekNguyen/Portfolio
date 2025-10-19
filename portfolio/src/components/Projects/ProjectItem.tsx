@@ -1,9 +1,15 @@
 import '../../styles/projects/projectItem.css'
+import * as motion from "motion/react-client"
 
-function ProjectItem() {
+interface projectItemInterface {
+  title: string,
+  onOpen: () => void,
+}
+
+function ProjectItem({ title, onOpen }: projectItemInterface) {
   return (
-    <div className="projectItem">
-      <p>POGGERS</p>
+    <div className="projectItem" onClick={onOpen}>
+      <p>{title}</p>
     </div>
   );
 }
