@@ -1,16 +1,18 @@
 import "../styles/projects/project.css"
 import ProjectItem from "../components/Projects/ProjectItem";
+import GameBoy from "../assets/images/projects/GameBoy.png"
 
 interface Project {
   title: string;
   description: string;
+  image: string;
 }
 
 function Projects() {
 
   const projects: Project[] = [
-    { title: "Game Boy Emulator", description: "A C# emulator with full CPU/PPU/APU." },
-    { title: "Portfolio Website", description: "React + Tailwind portfolio with animations." },
+    { title: "GameBoy Emulator", description: "A C# emulator with full CPU/PPU/APU.", image: GameBoy },
+    { title: "Portfolio Website", description: "React + Tailwind portfolio with animations.", image: "yo mama"},
   ];
 
   return (
@@ -21,6 +23,7 @@ function Projects() {
           id={i.toString()}
           description={proj.description}
           title={proj.title}
+          image={proj.image}
         />
       ))}
     </div>

@@ -1,7 +1,7 @@
 import type { Engine } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
-import { useCallback, useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 
 const ParticleComponent: React.FC = () => {
     const options = useMemo(
