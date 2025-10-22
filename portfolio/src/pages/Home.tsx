@@ -1,18 +1,47 @@
 import face from '../assets/images/face.png'
 import '../styles/homepage.css'
+import * as motion from "motion/react-client"
 
 function Home() {
   return (
     <>
       <div className='introContainer'>
-        <div className='faceImg'>
+        <motion.div
+          className='faceImg'
+          initial={{
+            x: -15,
+            opacity: 0
+          }}
+          animate={{
+            x: 0,
+            opacity: 1
+          }}
+          transition={{
+            x: { duration: 1 },
+            opacity: { duration: 1 }
+          }}
+        >
           <img src={face}></img>
-        </div>
-        <div className='introTextContainer'>
+        </motion.div>
+        <motion.div
+          className='introTextContainer'
+          initial={{
+            x: 15,
+            opacity: 0
+          }}
+          animate={{
+            x: 0,
+            opacity: 1
+          }}
+          transition={{
+            x: { duration: 1 },
+            opacity: { duration: 1 }
+          }}
+        >
           <p>
             Welcome to my Portfolio. You can find my projects & contacts here.
           </p>
-        </div>
+        </motion.div>
       </div>
     </>
   )

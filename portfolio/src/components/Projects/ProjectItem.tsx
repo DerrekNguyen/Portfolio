@@ -1,5 +1,6 @@
 import '../../styles/projects/projectItem.css'
 import GitHubIcon from '../../assets/icons/GitHub.svg';
+import LinkIcon from '../../assets/icons/Link.svg'
 import * as motion from "motion/react-client"
 import { useState } from 'react'
 import { AnimatePresence } from 'motion/react';
@@ -10,6 +11,8 @@ import TypeScriptIcon from "../../assets/icons/TypeScript.svg"
 import ExpressIcon from "../../assets/icons/ExpressJS.svg"
 import MySQLIcon from "../../assets/icons/MySQL.svg"
 import DigitalOceanIcon from "../../assets/icons/DigitalOcean.svg"
+import JavaScriptIcon from "../../assets/icons/JavaScript.svg"
+import P5JSIcon from "../../assets/icons/p5JS.svg"
 
 interface projectItemInterface {
   id: string,
@@ -18,10 +21,29 @@ interface projectItemInterface {
   image: string,
   technologies?: string[],
   gitHubLink?: string,
+  projectLink?: string,
 }
 
-function ProjectItem({ id, title, description, image, technologies, gitHubLink }: projectItemInterface) {
+function ProjectItem({ id, title, description, image, technologies, gitHubLink, projectLink }: projectItemInterface) {
   const [isOpen, setIsOpen] = useState<boolean | null>(null);
+
+  const linkVariants = {
+    initial: { opacity: 0 },
+    animate: (custom: {bgColor: string}) => ({
+      opacity: 1,
+      backgroundColor: custom.bgColor,
+      transition: { opacity: { delay: 0.4 } },
+    }),
+    hover: (custom: {hoverColor: string}) => ({
+      backgroundColor: custom.hoverColor,
+      transition: { backgroundColor: { duration: 0.2 } },
+    }),
+  };
+  const imageVariants = {
+    hover: {
+      scale: 1.2,
+    },
+  };
 
   return (
     <>
@@ -33,17 +55,39 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
           scale: 1.1,
           transition: { duration: 0.15, ease: "easeInOut" }
         }}
-        transition={{ duration: 0.3, ease: "easeInOut" }}
+        initial={{
+          y: 20,
+        }}
+        animate={{
+          y: 0,
+        }}
+        transition={{
+          y: {duration: 1},
+        }}
       >
         <motion.img
           src={image}
           className="absolute inset-0 w-full h-full object-cover rounded-[15%] -z-10 opacity-[0.3] brightness-70 blur-[4px]"
           layoutId={`${id}-image`}
-          initial={{ opacity: 1, filter: "brightness(1) blur(0px)" }}
-          animate={{ opacity: 0.3, filter: "brightness(0.7) blur(4px)" }}
-          transition={{ duration: 0.4 }}
+          initial={{ opacity: 1,}}
+          animate={{ opacity: 0.3,}}
+          transition={{
+            y: { duration: 1 },
+            opacity: {duration: 1 },
+            filter: {duration: 1  },
+          }}
         />
-        <motion.h2 layoutId={`${id}-title`} className="[font-family:'Montserrat'] font-bold text-[clamp(0.8rem,2vw,1.5rem)]">
+        <motion.h2 
+          layoutId={`${id}-title`} 
+          className="[font-family:'Montserrat'] font-bold text-[clamp(1.6rem,4vw,3rem)]"
+          initial={{
+            y: -20,
+          }}
+          animate={{
+            y: 0,
+          }}
+          transition={{y: { duration: 1 }}}
+        >
           {title}
         </motion.h2>
       </motion.div>
@@ -125,6 +169,12 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
                           case "DigitalOcean":
                             iconSrc = DigitalOceanIcon;
                             break;
+                          case "JavaScript":
+                            iconSrc = JavaScriptIcon;
+                            break;
+                          case "P5JS":
+                            iconSrc = P5JSIcon;
+                            break;
                           default:
                             iconSrc = null;
                         }
@@ -155,28 +205,62 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
                   {description}
                 </motion.p>
               </motion.div>
-              <motion.a
-                className="h-[5%] cursor-pointer flex justify-center items-center outline-hidden"
-                onClick={(e) => {
-                  e.stopPropagation();
-                }}
-                href={gitHubLink}
-                target="_blank"
-                initial={{ opacity: 0, }}
-                animate={{ opacity: 1, backgroundColor: "#00c951" }}
-                whileHover={{ scale: 1.2, backgroundColor: "#8cf0b4ff" }}
-                transition={{
-                  opacity: { delay: 0.4 },
-                  backgroundColor: { duration: 0.2 }
-                }}
+              <motion.div 
+                className='w-full flex flex-row'
               >
-                <img
-                  src={GitHubIcon}
-                  className="h-8 w-8 object-contain"
-                  alt="GitHub Link"
+                <motion.div 
+                  className='w-full'
+                  initial="initial"
+                  animate="animate"
+                  whileHover="hover"
                 >
-                </img>
-              </motion.a>
+                  <motion.a
+                    className="w-full cursor-pointer flex justify-center items-center outline-none"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                    }}
+                    href={gitHubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    custom={{bgColor: "#00c951", hoverColor: "#8cf0b4ff"}}
+                    variants={linkVariants}
+                  >
+                    <motion.img
+                      src={GitHubIcon}
+                      className="h-8 w-8 object-contain"
+                      alt="GitHub Link"
+                      variants={imageVariants}
+                    >
+                    </motion.img>
+                  </motion.a>
+                </motion.div>
+                {projectLink &&
+                  <motion.div
+                    className='w-full'
+                    initial="initial"
+                    animate="animate"
+                    whileHover="hover"
+                  >
+                    <motion.a
+                      className="w-full cursor-pointer flex justify-center items-center outline-hidden"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                      }}
+                      href={projectLink}
+                      target="_blank"
+                      custom={{ bgColor: "#008cc3ff", hoverColor: "#61ccf7ff" }}
+                      variants={linkVariants}
+                    >
+                      <motion.img
+                        src={LinkIcon}
+                        className="h-8 w-8 object-contain"
+                        alt="Project Link"
+                        variants={imageVariants}
+                      >
+                      </motion.img>
+                    </motion.a>
+                  </motion.div>}
+              </motion.div>
             </motion.div>
           </motion.div>
         )}

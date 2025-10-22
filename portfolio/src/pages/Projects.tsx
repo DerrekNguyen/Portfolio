@@ -1,7 +1,7 @@
-import "../styles/projects/project.css"
 import ProjectItem from "../components/Projects/ProjectItem";
 import GameBoy from "../assets/images/projects/GameBoy.png";
 import PokeApp from "../assets/images/projects/PokeApp.png";
+import GalacticGuardians from "../assets/images/projects/GalacticGuardians.png"
 
 interface Project {
   title: string;
@@ -9,21 +9,24 @@ interface Project {
   image: string;
   technologies?: string[];
   gitHubLink?: string;
+  projectLink?: string;
 }
 
 function Projects() {
 
   const projects: Project[] = [
-    { title: "GameBoy Emulator",
-      description: 
-      "A Game Boy emulator capable of reading ROM files to simulate playing on the Game Boy console, with all UI elements managed by SDL and processing handled in C#. " + 
-      "The architecture of the Game Boy, the CPU, PPU (graphics), and APU (audio), was carefully implemented to ensure all components interact correctly.",
+    {
+      title: "GameBoy Emulator",
+      description:
+        "A Game Boy emulator capable of reading ROM files to simulate playing on the Game Boy console, with all UI elements managed by SDL and processing handled in C#. " +
+        "The architecture of the Game Boy, the CPU, PPU (graphics), and APU (audio), was carefully implemented to ensure all components interact correctly.",
       image: GameBoy,
       technologies: ["C#", "SDL"],
       gitHubLink: "https://github.com/DerrekNguyen/Derrek-GameBoy",
     },
-    { title: "PokeApp",
-      description: "A passion project built with TypeScript and React for the UI, ExpressJS for the back end, "+ 
+    {
+      title: "PokeApp",
+      description: "A passion project built with TypeScript and React for the UI, ExpressJS for the back end, " +
         "and MySQL on a DigitalOcean cloud database to track users’ personal Pokémon card collections, " +
         "teaching me how to design databases from the ground up, create elegant table relationships, " +
         "and implement cybersecurity measures to securely store sensitive information.",
@@ -33,17 +36,28 @@ function Projects() {
     },
     {
       title: "Galatic Guardians",
-      description: "A collaborative tower defense game developed within a Scrum team using Agile methodology, " + 
-      "where I designed the core game logic, including entity movement, interactions, and overall game flow, " + 
-      "while gaining experience in iterative development and professional team practices.",
-      image: PokeApp,
-      technologies: ["TypeScript", "React", "ExpressJS", "MySQL", "DigitalOcean"],
-      gitHubLink: "https://github.com/ACruz2004/Poke-App",
+      description: "A collaborative tower defense game developed within a Scrum team using Agile methodology, " +
+        "where I designed the core game logic, including entity movement, interactions, and overall game flow, " +
+        "while gaining experience in iterative development and professional team practices.",
+      image: GalacticGuardians,
+      technologies: ["JavaScript", "P5JS"],
+      gitHubLink: "https://github.com/dominicf2001/project-beta",
+      projectLink: "https://dominicf2001.github.io/project-beta/",
+    },
+    {
+      title: "Derrek Application",
+      description: "A full-stack desktop application for monitoring daily activities and managing schedules, " + 
+      "built with C# and XAML on the WPF framework using Dapper to connect to a local SQL Server, " + 
+      "and serving as a practical exercise in MVVM software design patterns and integrating database connections with APIs",
+      image: GalacticGuardians,
+      technologies: ["JavaScript", "P5JS"],
+      gitHubLink: "https://github.com/dominicf2001/project-beta",
+      projectLink: "https://dominicf2001.github.io/project-beta/",
     },
   ];
 
   return (
-    <div className="project">
+    <div className="gap-[5rem] flex flex-wrap">
       {projects.map((proj, i) => (
         <ProjectItem
           key={i}
@@ -53,6 +67,7 @@ function Projects() {
           image={proj.image}
           technologies={proj.technologies}
           gitHubLink={proj.gitHubLink}
+          projectLink={proj.projectLink}
         />
       ))}
     </div>

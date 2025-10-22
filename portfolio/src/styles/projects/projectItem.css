@@ -7,8 +7,8 @@
     background: #1a1a1a;
 
     cursor: pointer;
-    height: min(35vh, 1000px);
-    width: min(20vw, 700px);
+    height: 45vh;
+    width: 25vw;
     border: 0.5vh solid #80ec97;
     font-family: 'Montserrat';
     border-radius: 15%;
