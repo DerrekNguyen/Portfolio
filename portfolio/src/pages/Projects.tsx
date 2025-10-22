@@ -1,6 +1,7 @@
 import "../styles/projects/project.css"
 import ProjectItem from "../components/Projects/ProjectItem";
-import GameBoy from "../assets/images/projects/GameBoy.png"
+import GameBoy from "../assets/images/projects/GameBoy.png";
+import PokeApp from "../assets/images/projects/PokeApp.png";
 
 interface Project {
   title: string;
@@ -21,7 +22,24 @@ function Projects() {
       technologies: ["C#", "SDL"],
       gitHubLink: "https://github.com/DerrekNguyen/Derrek-GameBoy",
     },
-    { title: "Portfolio Website", description: "React + Tailwind portfolio with animations.", image: "yo mama"},
+    { title: "PokeApp",
+      description: "A passion project built with TypeScript and React for the UI, ExpressJS for the back end, "+ 
+        "and MySQL on a DigitalOcean cloud database to track users’ personal Pokémon card collections, " +
+        "teaching me how to design databases from the ground up, create elegant table relationships, " +
+        "and implement cybersecurity measures to securely store sensitive information.",
+      image: PokeApp,
+      technologies: ["TypeScript", "React", "ExpressJS", "MySQL", "DigitalOcean"],
+      gitHubLink: "https://github.com/ACruz2004/Poke-App",
+    },
+    {
+      title: "Galatic Guardians",
+      description: "A collaborative tower defense game developed within a Scrum team using Agile methodology, " + 
+      "where I designed the core game logic, including entity movement, interactions, and overall game flow, " + 
+      "while gaining experience in iterative development and professional team practices.",
+      image: PokeApp,
+      technologies: ["TypeScript", "React", "ExpressJS", "MySQL", "DigitalOcean"],
+      gitHubLink: "https://github.com/ACruz2004/Poke-App",
+    },
   ];
 
   return (

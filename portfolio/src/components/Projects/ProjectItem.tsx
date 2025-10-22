@@ -3,8 +3,13 @@ import GitHubIcon from '../../assets/icons/GitHub.svg';
 import * as motion from "motion/react-client"
 import { useState } from 'react'
 import { AnimatePresence } from 'motion/react';
-import CSharp from "../../assets/icons/CSharp.svg"
-import SDL from "../../assets/icons/SDL.svg"
+import CSharpIcon from "../../assets/icons/CSharp.svg"
+import SDLIcon from "../../assets/icons/SDL.svg"
+import ReactIcon from "../../assets/icons/React.svg"
+import TypeScriptIcon from "../../assets/icons/TypeScript.svg"
+import ExpressIcon from "../../assets/icons/ExpressJS.svg"
+import MySQLIcon from "../../assets/icons/MySQL.svg"
+import DigitalOceanIcon from "../../assets/icons/DigitalOcean.svg"
 
 interface projectItemInterface {
   id: string,
@@ -32,7 +37,7 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
       >
         <motion.img
           src={image}
-          className="absolute inset-0 max-w-full max-h-full object-contain rounded-[15%] -z-10 opacity-[0.3] brightness-70 blur-[4px]"
+          className="absolute inset-0 w-full h-full object-cover rounded-[15%] -z-10 opacity-[0.3] brightness-70 blur-[4px]"
           layoutId={`${id}-image`}
           initial={{ opacity: 1, filter: "brightness(1) blur(0px)" }}
           animate={{ opacity: 0.3, filter: "brightness(0.7) blur(4px)" }}
@@ -63,10 +68,10 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
               transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             >
               <div className="h-[65%] w-full flex flex-row justify-start items-start">
-                <motion.div 
+                <motion.div
                   className="rounded-br-[1.5rem] border-r-8 border-b-8 border-green-500 overflow-hidden h-full"
-                  initial={{borderColor: "rgba(34,197,94,0)"}}
-                  animate={{borderColor: "rgba(34,197,94)"}}
+                  initial={{ borderColor: "rgba(34,197,94,0)" }}
+                  animate={{ borderColor: "rgba(34,197,94)" }}
                   exit={{
                     borderColor: "rgba(34,197,94,0)",
                     transition: { delay: 0, duration: 0 }
@@ -77,33 +82,48 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
                     src={image}
                     className="h-full w-full object-cover"
                     layoutId={`${id}-image`}
-                    initial={{opacity: 0.3, filter: "brightness(0.7) blur(4px)"}}
-                    animate={{opacity: 1, filter: "brightness(1) blur(0px)"}}
-                    transition={{duration: 0.4}}
+                    initial={{ opacity: 0.3, filter: "brightness(0.7) blur(4px)" }}
+                    animate={{ opacity: 1, filter: "brightness(1) blur(0px)" }}
+                    transition={{ duration: 0.4 }}
                   />
                 </motion.div>
                 <div className='flex-1 h-full flex flex-col justify-center'>
-                  <motion.h2 
-                    layoutId={`${id}-title`} 
+                  <motion.h2
+                    layoutId={`${id}-title`}
                     className="[font-family:'Montserrat'] text-[clamp(2rem,4vw,5rem)] font-bold my-8"
                   >
                     {title}
                   </motion.h2>
                   {technologies && (
-                    <motion.div 
+                    <motion.div
                       className='flex flex-row items-center mx-8 gap-8 justify-center'
-                      initial={{ opacity: 0,}}
-                      animate={{ opacity: 1,}}
+                      initial={{ opacity: 0, }}
+                      animate={{ opacity: 1, }}
                       transition={{ delay: 0.4 }}
                     >
                       {technologies.map((tech, index) => {
                         let iconSrc;
                         switch (tech) {
                           case "C#":
-                            iconSrc = CSharp;
+                            iconSrc = CSharpIcon;
                             break;
                           case "SDL":
-                            iconSrc = SDL;
+                            iconSrc = SDLIcon;
+                            break;
+                          case "TypeScript":
+                            iconSrc = TypeScriptIcon;
+                            break;
+                          case "React":
+                            iconSrc = ReactIcon;
+                            break;
+                          case "ExpressJS":
+                            iconSrc = ExpressIcon;
+                            break;
+                          case "MySQL":
+                            iconSrc = MySQLIcon;
+                            break;
+                          case "DigitalOcean":
+                            iconSrc = DigitalOceanIcon;
                             break;
                           default:
                             iconSrc = null;
@@ -123,7 +143,7 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
                   )}
                 </div>
               </div>
-              <motion.div 
+              <motion.div
                 className='h-[35%] flex flex-col justify-center w-full'
                 initial={{ opacity: 0, }}
                 animate={{ opacity: 1, }}
@@ -145,12 +165,12 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink }
                 initial={{ opacity: 0, }}
                 animate={{ opacity: 1, backgroundColor: "#00c951" }}
                 whileHover={{ scale: 1.2, backgroundColor: "#8cf0b4ff" }}
-                transition={{ 
-                  opacity: {delay: 0.4},
-                  backgroundColor: {duration: 0.2 }
+                transition={{
+                  opacity: { delay: 0.4 },
+                  backgroundColor: { duration: 0.2 }
                 }}
               >
-                <img 
+                <img
                   src={GitHubIcon}
                   className="h-8 w-8 object-contain"
                   alt="GitHub Link"
