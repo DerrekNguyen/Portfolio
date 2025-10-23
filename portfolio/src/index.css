@@ -25,9 +25,10 @@ a:hover {
 }
 
 body {
-  margin-top: 5rem;
   display: flex;
   place-items: center;
+  height: 100vh;
+  width: auto;
 }
 
 h1 {

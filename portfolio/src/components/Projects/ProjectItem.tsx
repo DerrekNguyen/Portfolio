@@ -56,13 +56,13 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink, 
           transition: { duration: 0.15, ease: "easeInOut" }
         }}
         initial={{
-          y: 20,
+          opacity: 0,
         }}
         animate={{
-          y: 0,
+          opacity: 1,
         }}
         transition={{
-          y: {duration: 1},
+          opacity: {duration: 1},
         }}
       >
         <motion.img

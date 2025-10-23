@@ -57,7 +57,7 @@ function Projects() {
   ];
 
   return (
-    <div className="gap-[5rem] flex flex-wrap">
+    <div className="gap-[5rem] flex flex-wrap justify-center mt-[20rem]">
       {projects.map((proj, i) => (
         <ProjectItem
           key={i}

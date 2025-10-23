@@ -12,7 +12,9 @@
 .introContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
+    margin-bottom: 10vh;
 }
 
 .faceImg {
@@ -35,6 +37,15 @@
 .introTextContainer p {
     color: #87e4f7;
     font-family: "Montserrat";
-    font-size: clamp(1rem, 7vh, 3rem);
+    font-size: clamp(1rem, 3rem, 10rem);
     font-weight: bolder;
+}
+
+.contactContainer {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: auto;
+    justify-self: center;
 }
