@@ -13,6 +13,8 @@ import MySQLIcon from "../../assets/icons/MySQL.svg"
 import DigitalOceanIcon from "../../assets/icons/DigitalOcean.svg"
 import JavaScriptIcon from "../../assets/icons/JavaScript.svg"
 import P5JSIcon from "../../assets/icons/p5JS.svg"
+import MicrosoftSQLIcon from "../../assets/icons/MicrosoftSQL.svg"
+import DotNetIcon from "../../assets/icons/DotNetCore.svg"
 
 interface projectItemInterface {
   id: string,
@@ -151,7 +153,7 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink, 
                           case "C#":
                             iconSrc = CSharpIcon;
                             break;
-                          case "SDL":
+                          case "Simple DirectMedia Layer":
                             iconSrc = SDLIcon;
                             break;
                           case "TypeScript":
@@ -174,6 +176,12 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink, 
                             break;
                           case "P5JS":
                             iconSrc = P5JSIcon;
+                            break;
+                          case "Microsoft SQL Server":
+                            iconSrc = MicrosoftSQLIcon;
+                            break;
+                          case ".NET Framework":
+                            iconSrc = DotNetIcon;
                             break;
                           default:
                             iconSrc = null;

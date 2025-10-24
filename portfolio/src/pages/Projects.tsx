@@ -1,7 +1,9 @@
 import ProjectItem from "../components/Projects/ProjectItem";
 import GameBoy from "../assets/images/projects/GameBoy.png";
 import PokeApp from "../assets/images/projects/PokeApp.png";
+import DerrekApplication from "../assets/images/projects/DerrekApplication.png"
 import GalacticGuardians from "../assets/images/projects/GalacticGuardians.png"
+import DebtNextDashboard from "../assets/images/projects/DebtNextDashboard.png"
 
 interface Project {
   title: string;
@@ -21,7 +23,7 @@ function Projects() {
         "A Game Boy emulator capable of reading ROM files to simulate playing on the Game Boy console, with all UI elements managed by SDL and processing handled in C#. " +
         "The architecture of the Game Boy, the CPU, PPU (graphics), and APU (audio), was carefully implemented to ensure all components interact correctly.",
       image: GameBoy,
-      technologies: ["C#", "SDL"],
+      technologies: ["C#", "Simple DirectMedia Layer"],
       gitHubLink: "https://github.com/DerrekNguyen/Derrek-GameBoy",
     },
     {
@@ -49,10 +51,18 @@ function Projects() {
       description: "A full-stack desktop application for monitoring daily activities and managing schedules, " + 
       "built with C# and XAML on the WPF framework using Dapper to connect to a local SQL Server, " + 
       "and serving as a practical exercise in MVVM software design patterns and integrating database connections with APIs",
-      image: GalacticGuardians,
-      technologies: ["JavaScript", "P5JS"],
-      gitHubLink: "https://github.com/dominicf2001/project-beta",
-      projectLink: "https://dominicf2001.github.io/project-beta/",
+      image: DerrekApplication,
+      technologies: ["C#", ".NET Framework", "Microsoft SQL Server"],
+      gitHubLink: "https://github.com/DerrekNguyen/Derrek-Application",
+    },
+    {
+      title: "DebtNext Dashboard",
+      description: "Developed a full-stack employee dashboard for DebtNext, " + 
+      "designing and implementing a SQL database and Node.js REST API backend to manage interdepartmental events and communication " + 
+      "while collaborating in an Agile team to deliver the product within time and budget constraints.",
+      image: DebtNextDashboard,
+      technologies: ["JavaScript", "React", "ExpressJS", "MySQL", "DigitalOcean"],
+      gitHubLink: "https://github.com/EthanMorris2003/Capstone_Project",
     },
   ];
 
