@@ -15,6 +15,8 @@ import JavaScriptIcon from "../../assets/icons/JavaScript.svg"
 import P5JSIcon from "../../assets/icons/p5JS.svg"
 import MicrosoftSQLIcon from "../../assets/icons/MicrosoftSQL.svg"
 import DotNetIcon from "../../assets/icons/DotNetCore.svg"
+import FramerMotionIcon from "../../assets/icons/Motion.svg"
+import TailwindIcon from "../../assets/icons/Tailwind.svg"
 
 interface projectItemInterface {
   id: string,
@@ -182,6 +184,12 @@ function ProjectItem({ id, title, description, image, technologies, gitHubLink, 
                             break;
                           case ".NET Framework":
                             iconSrc = DotNetIcon;
+                            break;
+                          case "Framer Motion":
+                            iconSrc = FramerMotionIcon;
+                            break;
+                          case "Tailwind CSS":
+                            iconSrc = TailwindIcon;
                             break;
                           default:
                             iconSrc = null;

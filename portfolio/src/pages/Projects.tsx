@@ -4,6 +4,7 @@ import PokeApp from "../assets/images/projects/PokeApp.png";
 import DerrekApplication from "../assets/images/projects/DerrekApplication.png"
 import GalacticGuardians from "../assets/images/projects/GalacticGuardians.png"
 import DebtNextDashboard from "../assets/images/projects/DebtNextDashboard.png"
+import Portfolio from "../assets/images/projects/Portfolio.png"
 
 interface Project {
   title: string;
@@ -63,6 +64,16 @@ function Projects() {
       image: DebtNextDashboard,
       technologies: ["JavaScript", "React", "ExpressJS", "MySQL", "DigitalOcean"],
       gitHubLink: "https://github.com/EthanMorris2003/Capstone_Project",
+    },
+    {
+      title: "Portfolio",
+      description: "A responsive and visually engaging portfolio website built with React and TypeScript, " + 
+      "styled using Tailwind CSS and animated with Framer Motion to create smooth and interactive transitions. " + 
+      "It houses my projects throughout my learning journey, as well as my contact information, and is fully deployed and hosted on GitHub Pages",
+      image: Portfolio,
+      technologies: ["TypeScript", "React", "Tailwind CSS", "Framer Motion"],
+      gitHubLink: "https://github.com/DerrekNguyen/Portfolio",
+      projectLink: "https://derreknguyen.github.io/Portfolio/",
     },
   ];
 
